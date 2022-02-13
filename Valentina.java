@@ -329,7 +329,7 @@ public class Valentina {
                 break;
             }
         }
-        System.out.println("VALENTINA: ");
+        System.out.println("VALENTINA: MUST BE NICE RIGHT?");
 
     }    
 
