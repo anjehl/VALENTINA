@@ -235,30 +235,26 @@ public class Valentina {
             }
         }
     }
-    static void INT1() { 
-        //Free Reply 1
-        String reply1;
-        reply1 = userInput.nextLine();
-        
-        //Free Response 1
-        System.out.print("YOUR ANSWER: " + reply1);
-        System.out.print("VALENTINA: OH, I SEE.");
+    static void INT1() {
+        String int1;
+        int1 = userInput.nextLine();
+        System.out.println(int1);
+        System.out.println("VALENTINA: AWWWW, I SEE!");
     }
-
     static void robot1() {
-        //Ask1
+        //Stuff
         String name;
         String Val1 = "one";
         String Val2 = "two";
         String Val3 = "three";
         
-        //V A L E N T I N A
+        //Valentina wants to know your name
         System.out.println(" ");
         System.out.println("VALENTINA: HELLO HUMAN, MY NAME IS VALENTINA.");
         System.out.println("VALENTINA: WHAT IS YOUR NAME?");
-        name = userInput.nextLine();
         
-        //Ask1
+        //You tell Valentina your name
+        name = userInput.nextLine();
         System.out.println("VALENTINA: HELLO, " + name.toUpperCase() + "! " + "HOW ARE YOU?");
         System.out.println("   (Please type 'one', 'two', or 'three':)");
         System.out.println("            (one.  I am well.)");
@@ -291,60 +287,21 @@ public class Valentina {
                 break;
             }
         }
-        //V A L E N T I N A
-        System.out.println("VALENTINA: HMMM.. DO YOU HAVE ANY SIBLINGS? I DON'T HAVE ANY, SO I GUESS YOU CAN SAY");
-        System.out.println("           I'M MY CREATOR'S FIRST BORN.");
+        System.out.println("VALENTINA: DO YOU LIKE VALENTINE'S DAY?");
         
-        //Ask2
-        String Val4 = "only";
-        String Val5 = "another";
-        String Val6 = "multiple";
-        System.out.println("   (Please type 'only', 'another', or 'multiple':)");
-        System.out.println("                (only.  I am an only child.)");
-        System.out.println("            (another.  I have another sibling.)");
-        System.out.println("         (multiple.  I am one of multiple siblings.)");
-        
-        while (true) {
-            String answer8 = userInput.nextLine();
-            if (answer8.equals(Val4)) {
-                System.out.println("VALENTINA: TWINSIES!");
-                break;
-            }
-            else if (answer8.equals(Val5)) {
-                System.out.println("VALENTINA: IS THAT SO? MAYBE I SHOULD ASK MY CREATOR IF I COULD HAVE ANOTHER");
-                System.out.println("           SIBLING TOO. THAT WAY, WE CAN BE TWINSIES!");
-                break;
-            }
-            else if (answer8.equals(Val6)) {
-                System.out.println("VALENTINA: OH? THAT SOUNDS INTERESTNG. AS YOU KNOW, I DON'T KNOW WHAT IT'S LIKE");
-                System.out.println("           WITH MULTIPLE SIBLINGS, BUT MAYBE I CAN ASK MY CREATOR IF I COULD HAVE");
-                System.out.println("           SOME OF THEM TOO!");
-                break;
-            }
-            else {
-                System.out.println("   (Please type 'only', 'another', or 'multiple':)");
-                System.out.println("                (only.  I am an only child.)");
-                System.out.println("            (another.  I have another sibling.)");
-                System.out.println("         (multiple.  I am one of multiple siblings.)");                
-                break;
-            }
-        }
-        System.out.println("VALENTINA: MUST BE NICE RIGHT?");
-
-    }    
-
-       public static void main(String[] args) {
+    }
+public static void main(String[] args) {
         //Intro
         mainMenu();
         TAC();
         warn();
         
-        //Valentina     
+        //Valentina
         robot1();
         
         //Endings
         
-        //Logs
+        //Log
         
     }
 }
